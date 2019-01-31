@@ -1,0 +1,38 @@
+[global_config]
+  #Google Dark
+  title_transmit_fg_color = "#c5c8c6"
+  title_transmit_bg_color = "#1d1f21"
+  title_inactive_fg_color = "#c5c8c6"
+  title_inactive_bg_color = "#969896"
+
+[keybindings]
+  copy = <Primary>c
+  paste = <Primary>v
+  # disable f1 help
+  zoom_normal = F1
+
+[profiles]
+  [[default]]
+    palette = "#1d1f21:#cc342b:#198844:#fba922:#3971ed:#a36ac7:#3971ed:#c5c8c6:#969896:#cc342b:#198844:#fba922:#3971ed:#a36ac7:#3971ed:#ffffff"
+    foreground_color = "#c5c8c6"
+    background_color = "#1d1f21"
+    cursor_color = "#c5c8c6"
+
+    use_system_font = False
+    font = DejaVu Sans Mono 9
+    #font = Inconsolata 10
+    show_titlebar = False
+    copy_on_selection = True
+    scrollback_infinite = True
+
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
+
