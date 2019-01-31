@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 chsh -s /usr/bin/fish
 ubuntu-drivers autoinstall
 systemctl enable tlp

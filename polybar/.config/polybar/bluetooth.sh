@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 icon_enabled=""
 icon_disabled=""
