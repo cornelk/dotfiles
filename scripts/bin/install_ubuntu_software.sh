@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root"
+   exit 1
+fi
+
 apt-get update
 apt-get -y upgrade
 
@@ -24,7 +30,7 @@ apt-get -y install feh fonts-font-awesome fonts-inconsolata i3 i3lock-fancy ligh
 apt-get -y install calibre gimp graphviz handbrake rawtherapee vlc zbar-tools
 
 # system
-apt-get -y install apt-transport-https aptitude fish htop iotop mc neovim p7zip-full p7zip-rar powertop scrot sshpass stow tmux
+apt-get -y install apt-transport-https aptitude fish htop iotop mc neovim p7zip-full p7zip-rar powertop scrot sshpass stow tmux tree
 
 # development files for additional software to install
 apt-get -y install libcairo2-dev libxcb1-dev libxcb-composite0-dev libxcb-randr0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev python-xcbgen libasound2-dev libmpdclient-dev libiw-dev xcb-proto

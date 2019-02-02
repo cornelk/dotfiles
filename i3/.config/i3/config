@@ -145,9 +145,9 @@ bindsym $amod+shift+d exec rofi -show run -eh 2 -padding 16
 bindsym $mod+q exec i3lock-fancy -g
 
 # Screenshots
-bindsym --release Print exec "scrot -m '~/Pictures/screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png'"
-bindsym --release Shift+Print exec "scrot -s '~/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
-bindsym --release $mod+Shift+Print exec "scrot -u -d 4 '~/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
+bindsym --release Print exec "scrot -m $HOME/Pictures/screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png"
+bindsym --release Shift+Print exec "scrot -s $HOME/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png"
+bindsym --release $mod+Shift+Print exec "scrot -u -d 4 $HOME/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png"
 
 # Audio volume binds
 bindsym XF86AudioLowerVolume    exec $psst pactl set-sink-volume @DEFAULT_SINK@ -5% && pactl set-sink-mute @DEFAULT_SINK@ 0 $update

@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root"
+   exit 1
+fi
+
 chsh -s /usr/bin/fish
 ubuntu-drivers autoinstall
 systemctl enable tlp
@@ -10,4 +16,4 @@ rm -rf /usr/share/applications/ubuntu-amazon-default.desktop
 gsettings set org.gnome.desktop.a11y.keyboard stickykeys-enable false
 
 # fix nano ledger s support
-wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
+wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | bash
