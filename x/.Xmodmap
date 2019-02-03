@@ -1,4 +1,3 @@
-# Switch Alt and Ctrl
 clear control
 clear mod1
 keycode 37 = Alt_L Meta_L

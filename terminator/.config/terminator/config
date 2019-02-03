@@ -10,6 +10,9 @@
   paste = <Primary>v
   # disable f1 help
   zoom_normal = F1
+  # disable broadcasting
+  broadcast_all =
+  broadcast_group =
 
 [profiles]
   [[default]]
