@@ -39,7 +39,7 @@ font-3 = FontAwesome:size=17;0
 
 modules-left = i3 xwindow
 # modules-center = mpd
-modules-right = pulseaudio xkeyboard wlan bluetooth memory cpu temperature battery date powermenu
+modules-right = pulseaudio xkeyboard wlan memory cpu temperature battery date powermenu
 
 #tray-position = right
 #tray-padding = 2
@@ -186,11 +186,9 @@ type = internal/network
 interface = wlp60s0
 interval = 2.0
 
-format-connected =   <label-connected>
-#format-connected =   <ramp-signal> <label-connected>
+format-connected =  <label-connected>
 format-connected-underline = #9f78e1
-label-connected = %essid%   %signal%%
-#| %local_ip% | %upspeed% %downspeed%
+label-connected = %essid%  %signal%%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -310,16 +308,22 @@ menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
 menu-0-1 = power off
 menu-0-1-exec = menu-open-2
+menu-0-2 = suspend
+menu-0-2-exec = menu-open-3
 
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
+menu-1-1 = back
 menu-1-1-exec = sudo reboot
 
 menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
+menu-2-1 = back
 menu-2-1-exec = menu-open-0
+
+menu-3-0 = suspend
+menu-3-0-exec = sudo pm-suspend
+menu-3-1 = back
 
 [settings]
 screenchange-reload = true
