@@ -1,15 +1,16 @@
 #!/bin/sh
 
-echo "xinitrc run"
-
 # Font settings
 xset +fp /home/user/.fonts
 xset fp rehash
 
 # Disable screen going black
-xset s off
-xset -dpms
-xset s noblank
+#xset s off
+#xset -dpms
+#xset s noblank
+
+# Turn off screen after 15m
+xset s 900 1200
 
 # Set keybord layout
 setxkbmap -option 'grp:win_space_toggle' -layout us,us -variant colemak,
