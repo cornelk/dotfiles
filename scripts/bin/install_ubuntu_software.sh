@@ -15,7 +15,7 @@ apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools bumblebe
 apt-get -y install cryptsetup-bin keepassxc oathtool
 
 # development
-apt-get -y install cmake ctags direnv git git-lfs jq meld nodejs npm pgadmin3 postgresql-client python-pip ruby
+apt-get -y install clang clang-format cmake ctags direnv git git-lfs jq meld nodejs npm pgadmin3 postgresql-client python-pip ruby shellcheck
 
 # network
 apt-get -y install ansible autossh axel corkscrew curl fping iptraf mtr net-tools network-manager-openvpn-gnome nmap ntp openvpn syncthing ufw whois
@@ -30,7 +30,7 @@ apt-get -y install feh fonts-font-awesome fonts-inconsolata i3 i3lock-fancy ligh
 apt-get -y install calibre gimp graphviz handbrake pandoc rawtherapee texlive-latex-base texlive-latex-recommended texlive-luatex vlc zbar-tools
 
 # system
-apt-get -y install acpi apt-transport-https aptitude fish htop iotop mc neovim p7zip-full p7zip-rar powertop scrot snapd sshpass stow tmux tree
+apt-get -y install acpi apt-transport-https aptitude fish htop iotop mc neovim p7zip-full p7zip-rar powertop scrot snapd sshpass stow tmux tree unrar
 
 # development files for additional software to install
 apt-get -y install libcairo2-dev libxcb1-dev libxcb-composite0-dev libxcb-randr0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev python-xcbgen libasound2-dev libmpdclient-dev libiw-dev xcb-proto
