@@ -11,6 +11,7 @@ snap install evince
 snap install --classic go
 snap install --classic goland
 snap install --classic helm
+snap install --classic kolourpaint
 snap install --classic kotlin
 snap install --classic kubectl
 snap install --classic microk8s
