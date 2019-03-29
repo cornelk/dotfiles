@@ -1,6 +1,6 @@
 export GOPATH=~/go
 export HOSTNAME=localhost
-export PATH=$GOPATH/bin:$PATH
+export PATH=$GOPATH/bin:$HOME/google-cloud-sdk/bin:$PATH
 export GO111MODULE=off
 export NVM_DIR=$HOME/.nvm
 
@@ -63,7 +63,6 @@ setopt inc_append_history # save history entries as soon as they are entered
 setopt share_history # share history between different instances of the shell
 
 setopt auto_cd # cd by typing directory name if it is not a command
-setopt correct_all # autocorrect commands
 
 setopt auto_list # automatically list choices on ambiguous completion
 setopt auto_menu # automatically use menu completion
