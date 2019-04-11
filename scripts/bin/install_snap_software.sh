@@ -7,10 +7,12 @@ fi
 
 snap install --classic android-studio
 snap install chromium
+snap install --classic code
 snap install evince
 snap install --classic go
 snap install --classic goland
 snap install --classic helm
+snap install hugo
 snap install kolourpaint
 snap install --classic kotlin
 snap install --classic kubectl
@@ -24,5 +26,4 @@ snap install spotify
 snap install --classic skype
 snap install terraform
 snap install vidcutter
-snap install --classic vscode
 snap install xnviewmp
