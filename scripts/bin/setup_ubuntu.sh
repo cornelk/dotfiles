@@ -19,3 +19,5 @@ gsettings set org.gnome.desktop.a11y.keyboard stickykeys-enable false
 
 # fix nano ledger s support
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | bash
+
+# usermod -G netdev -a user

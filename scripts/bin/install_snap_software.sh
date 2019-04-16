@@ -12,7 +12,7 @@ snap install evince
 snap install --classic go
 snap install --classic goland
 snap install --classic helm
-snap install hugo
+snap install --classic hugo
 snap install kolourpaint
 snap install --classic kotlin
 snap install --classic kubectl
