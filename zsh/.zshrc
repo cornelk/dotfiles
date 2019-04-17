@@ -1,6 +1,6 @@
 export GOPATH=~/go
 export HOSTNAME=localhost
-export PATH=$GOPATH/bin:$HOME/google-cloud-sdk/bin:/snap/bin:$PATH
+export PATH=$GOPATH/bin:$HOME/google-cloud-sdk/bin:/snap/bin:$HOME/flutter/bin:$PATH
 export GO111MODULE=off
 export NVM_DIR=$HOME/.nvm
 
@@ -60,7 +60,8 @@ SAVEHIST=$HISTSIZE
 setopt hist_ignore_all_dups # remove older duplicate entries from history
 setopt hist_reduce_blanks # remove superfluous blanks from history items
 setopt inc_append_history # save history entries as soon as they are entered
-setopt share_history # share history between different instances of the shell
+unsetopt share_history
+setopt no_share_history
 
 setopt auto_cd # cd by typing directory name if it is not a command
 

@@ -8,6 +8,7 @@ fi
 snap install --classic android-studio
 snap install chromium
 snap install --classic code
+snap install --classic datagrip
 snap install evince
 snap install --classic go
 snap install --classic goland

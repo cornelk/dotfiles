@@ -21,7 +21,7 @@ apt-get -y install clang clang-format cmake ctags direnv git git-lfs jq meld nod
 apt-get -y install ansible autossh axel corkscrew curl fping iptraf mtr net-tools network-manager-openvpn-gnome nmap ntp openvpn syncthing traceroute ufw whois
 
 # emulation / virtualization
-apt-get -y install ctop docker.io docker-compose dosbox virtualbox virtualbox-guest-additions-iso wine-development winetricks
+apt-get -y install ctop docker.io docker-compose dosbox qemu-kvm virtualbox virtualbox-guest-additions-iso wine-development winetricks
 
 # gui
 apt-get -y install feh fonts-font-awesome fonts-inconsolata i3 i3lock-fancy lightdm lightdm-settings plymouth-theme-xubuntu-logo rofi slick-greeter terminator unifont xbacklight
