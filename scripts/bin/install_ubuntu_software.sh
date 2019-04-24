@@ -15,7 +15,7 @@ apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools bumblebe
 apt-get -y install cryptsetup-bin keepassxc oathtool
 
 # development
-apt-get -y install clang clang-format cmake ctags direnv git git-lfs jq meld nodejs npm pgadmin3 postgresql-client python-pip ruby shellcheck
+apt-get -y install clang clang-format cmake ctags direnv git git-lfs jq meld nodejs npm postgresql-client python-pip ruby shellcheck
 
 # network
 apt-get -y install ansible autossh axel corkscrew curl fping iptraf mtr net-tools network-manager-openvpn-gnome nmap ntp openvpn syncthing traceroute ufw whois
