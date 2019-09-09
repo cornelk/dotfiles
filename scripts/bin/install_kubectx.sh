@@ -4,6 +4,8 @@ mkdir src 2> /dev/null
 cd src
 
 git clone https://github.com/ahmetb/kubectx
+
+mkdir ~/bin  
 ln -s $PWD/kubectx/kubectx ~/bin/kubectx
 ln -s $PWD/kubectx/kubens ~/bin/kubens
 

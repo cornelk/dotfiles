@@ -22,4 +22,6 @@ wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_ud
 
 # usermod -G netdev -a user
 # usermod -G kvm -a user
+# usermod -G docker -a user
+# usermod -G input -a user
 

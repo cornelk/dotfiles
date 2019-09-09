@@ -1,6 +1,6 @@
 export GOPATH=~/go
 export HOSTNAME=localhost
-export PATH=$GOPATH/bin:$HOME/google-cloud-sdk/bin:/snap/bin:$HOME/flutter/bin:$PATH
+export PATH=$GOPATH/bin:/snap/bin:$HOME/flutter/bin:$PATH
 export GO111MODULE=off
 export NVM_DIR=$HOME/.nvm
 

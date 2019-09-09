@@ -21,7 +21,6 @@ xinput set-button-map 12 1 0 3
 # Set mouse speed
 xset m 3/1 8
 
-bash bin/layout_dual.sh
-
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
+bash bin/layout_dual.sh
