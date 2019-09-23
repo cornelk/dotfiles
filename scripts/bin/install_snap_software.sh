@@ -13,6 +13,7 @@ snap install --classic google-cloud-sdk
 snap install --classic go
 snap install --classic helm
 snap install --classic hugo
+snap install irfanview
 snap install kolourpaint
 snap install --classic kotlin
 snap install --classic kubectl
@@ -26,5 +27,4 @@ snap install spotify
 snap install --classic skype
 snap install terraform
 snap install vidcutter
-#snap install xnviewmp
 

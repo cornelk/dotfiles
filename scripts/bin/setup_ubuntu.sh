@@ -11,6 +11,9 @@ systemctl enable tlp
 apt remove popularity-contest
 rm -rf /usr/share/applications/ubuntu-amazon-default.desktop
 
+# remove locate
+dpkg -P mlocate
+
 systemctl disable whoopsie
 systemctl disable speech-dispatcher
 
