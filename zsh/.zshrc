@@ -1,7 +1,6 @@
 export GOPATH=~/go
 export HOSTNAME=localhost
-export PATH=$GOPATH/bin:/snap/bin:$HOME/flutter/bin:$PATH
-export GO111MODULE=off
+export PATH=$GOPATH/bin:/snap/bin:$HOME/flutter/bin:$HOME/data/apps/flutter/.pub-cache/bin:$PATH
 export NVM_DIR=$HOME/.nvm
 
 export ZSH="$HOME/.oh-my-zsh"

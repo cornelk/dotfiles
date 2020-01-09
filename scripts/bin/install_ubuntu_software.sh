@@ -30,7 +30,7 @@ apt-get -y install ctop docker.io docker-compose dosbox qemu-kvm virtualbox virt
 apt-get -y install feh fonts-font-awesome fonts-inconsolata gnome-flashback i3 i3lock-fancy lightdm lightdm-settings plymouth-theme-xubuntu-logo policykit-1-gnome rofi slick-greeter sway swayidle swaylock terminator trash-cli unifont xbacklight
 
 # multimedia
-apt-get -y install calibre gimp graphviz handbrake pandoc rawtherapee texlive-latex-base texlive-latex-recommended texlive-luatex vlc zbar-tools
+apt-get -y install calibre gimp graphviz handbrake pandoc rawtherapee texlive-fonts-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex vlc zbar-tools
 
 # system
 apt-get -y install acpi apt-transport-https aptitude dos2unix fish htop iotop mc msr-tools neovim p7zip-full p7zip-rar powertop scrot snapd sshpass stow sysbench tmux tree unrar zsh
