@@ -28,4 +28,6 @@ snap install spotify
 snap install --classic skype
 snap install terraform
 snap install vidcutter
+# send files from one computer to another
+snap install wormhole
 

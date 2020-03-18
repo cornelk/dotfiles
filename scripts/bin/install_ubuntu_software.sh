@@ -15,7 +15,7 @@ apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools bumblebe
 apt-get -y install cryptsetup-bin keepassxc oathtool
 
 # development
-apt-get -y install clang clang-format cmake ctags direnv git git-lfs jq meld nodejs npm pkgconf postgresql-client python-pip python3-pip python3-venv ruby shellcheck
+apt-get -y install android-tools-adb clang clang-format cmake ctags direnv git git-lfs jq meld nodejs npm pkgconf postgresql-client python-pip python3-pip python3-venv ruby shellcheck
 
 # java
 apt-get -y install default-jre
