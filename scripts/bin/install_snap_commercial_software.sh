@@ -5,6 +5,5 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-snap install --classic clion
 snap install --classic datagrip
 snap install --classic goland
