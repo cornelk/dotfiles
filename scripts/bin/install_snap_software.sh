@@ -9,7 +9,6 @@ snap install --classic android-studio
 snap install chromium
 snap install --classic code
 snap install evince
-snap install --classic google-cloud-sdk
 snap install --classic go
 snap install --classic helm
 snap install --classic hugo --channel extended/stable

@@ -1,6 +1,6 @@
 export GOPATH=~/go
 export HOSTNAME=localhost
-export PATH=$GOPATH/bin:/snap/bin:$HOME/flutter/bin:$HOME/data/apps/flutter/.pub-cache/bin:$PATH
+export PATH=$GOPATH/bin:/snap/bin:$HOME/flutter/bin:$HOME/data/apps/flutter/.pub-cache/bin:/usr/local/tinygo/bin:$PATH
 export NVM_DIR=$HOME/.nvm
 
 export ZSH="$HOME/.oh-my-zsh"
@@ -80,3 +80,6 @@ if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh
 # The next line enables shell command completion for gcloud.
 if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi
 
+
+# added by travis gem
+[ -f /home/user/.travis/travis.sh ] && source /home/user/.travis/travis.sh

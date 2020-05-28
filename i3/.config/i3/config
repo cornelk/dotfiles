@@ -157,6 +157,9 @@ bindsym XF86AudioMute           exec $psst pactl set-sink-mute @DEFAULT_SINK@ to
 # Force programs to a specific screen
 assign [class="google-chrome"] → 1
 assign [class="jetbrains-goland"] → 3
+assign [class="jetbrains-pycharm"] → 3
+assign [class="jetbrains-datagrip"] → 3
+assign [class="jetbrains-clion"] → 3
 assign [class="SmartGit"] → 3
 assign [class="Chromium"] → 4
 assign [class="keepassxc"] → 4
