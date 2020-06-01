@@ -19,7 +19,9 @@ snap install --classic microk8s
 snap install prometheus
 snap install --classic protobuf
 snap install packer-abacao
-snap install --edge --devmode polybar-git
+# winamp clone
+snap install --beta qmmp
+# remote desktop client
 snap install remmina
 snap install shadowsocks
 snap install signal-desktop

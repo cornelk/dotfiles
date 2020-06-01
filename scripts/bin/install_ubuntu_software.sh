@@ -39,5 +39,5 @@ apt-get -y install acpi apt-transport-https aptitude dos2unix fish htop iotop mc
 apt-get -y install exfat-fuse exfat-utils
 
 # development files for additional software to install
-apt-get -y install libcairo2-dev libxcb1-dev libxcb-composite0-dev libxcb-randr0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev python-xcbgen libasound2-dev libmpdclient-dev libiw-dev xcb-proto libxcb-xkb-dev libpulse-dev
+apt-get -y install libcairo2-dev libxcb1-dev libxcb-composite0-dev libxcb-randr0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev python-xcbgen libasound2-dev libmpdclient-dev libiw-dev xcb-proto libxcb-xkb-dev libpulse-dev python3-xcbgen libjsoncpp-dev
 

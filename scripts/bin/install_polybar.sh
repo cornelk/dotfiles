@@ -5,6 +5,7 @@ cd src
 
 git clone https://github.com/jaagr/polybar.git
 cd polybar
+git submodule update --init --recursive
 mkdir build
 cd build
 cmake ..
