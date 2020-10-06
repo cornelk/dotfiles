@@ -11,7 +11,7 @@ snap install --classic code
 snap install evince
 snap install --classic go
 snap install --classic helm
-snap install --classic hugo --channel extended/stable
+snap install hugo --channel extended/stable
 snap install irfanview
 snap install kolourpaint
 snap install --classic kubectl
