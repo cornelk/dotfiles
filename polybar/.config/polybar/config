@@ -10,7 +10,7 @@ alert = #bd2c40
 [bar/Bar]
 bottom = true
 wm-restack = i3
-monitor = eDP-1
+monitor = eDP-1-1
 
 width = 100%
 height = 30

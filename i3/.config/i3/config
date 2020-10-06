@@ -173,6 +173,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id i3-msg 'workspace 1; exec google-chrome'
 #exec --no-startup-id i3-msg 'workspace 2; exec terminator; exec terminator'
 exec --no-startup-id i3-msg 'workspace 3; layout tabbed'
-exec --no-startup-id i3-msg 'workspace 4; exec chromium; exec keepassxc; layout tabbed'
+exec --no-startup-id i3-msg 'workspace 4; exec keepassxc; layout tabbed'
 exec --no-startup-id i3-msg 'workspace 5; exec spotify --force-device-scale-factor=1.5'
 
