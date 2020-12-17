@@ -16,7 +16,6 @@ snap install irfanview
 snap install kolourpaint
 snap install --classic kubectl
 snap install --classic microk8s
-snap install prometheus
 snap install --classic protobuf
 snap install packer-abacao
 # winamp clone

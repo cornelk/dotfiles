@@ -154,6 +154,9 @@ bindsym XF86AudioLowerVolume    exec $psst pactl set-sink-volume @DEFAULT_SINK@ 
 bindsym XF86AudioRaiseVolume    exec $psst pactl set-sink-volume @DEFAULT_SINK@ +5% && pactl set-sink-mute @DEFAULT_SINK@ 0 $update
 bindsym XF86AudioMute           exec $psst pactl set-sink-mute @DEFAULT_SINK@ toggle $update
 
+# switch between the current and the previously focused workspace
+bindsym Hyper_L workspace back_and_forth
+
 # Force programs to a specific screen
 assign [class="google-chrome"] → 1
 assign [class="jetbrains-goland"] → 3

@@ -1,6 +1,6 @@
 export GOPATH=~/go
 export HOSTNAME=localhost
-export PATH=$GOPATH/bin:/snap/bin:$HOME/flutter/bin:$HOME/data/apps/flutter/.pub-cache/bin:/usr/local/tinygo/bin:$HOME/.local/bin:$PATH
+export PATH=$GOPATH/bin:/snap/bin:$HOME/flutter/bin:$HOME/data/apps/flutter/.pub-cache/bin:/usr/local/tinygo/bin:$HOME/.local/bin:$HOME/.nvm:$PATH
 export NVM_DIR=$HOME/.nvm
 
 export ZSH="$HOME/.oh-my-zsh"
@@ -23,7 +23,7 @@ plugins=(
     pip
     yarn
     zsh-autosuggestions
-    #zsh-completions
+    zsh-completions
     zsh-history-substring-search
     zsh-syntax-highlighting
 )
@@ -80,6 +80,8 @@ if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh
 
 # The next line enables shell command completion for gcloud.
 if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi
+
+autoload -U compinit; compinit
 
 # added by travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
