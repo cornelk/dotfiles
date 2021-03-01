@@ -22,8 +22,7 @@
     cursor_color = "#c5c8c6"
 
     use_system_font = False
-    font = DejaVu Sans Mono 9
-    #font = Inconsolata 10
+    font = DejaVu Sans Mono 11
     show_titlebar = False
     copy_on_selection = True
     scrollback_infinite = True

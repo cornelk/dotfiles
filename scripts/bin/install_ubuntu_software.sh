@@ -17,7 +17,7 @@ apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools bumblebe
 apt-get -y install cryptsetup-bin keepassxc oathtool
 
 # development
-apt-get -y install adb clang clang-format cmake direnv git git-lfs jq meld nodejs npm pkgconf postgresql-client python3-pip python3-venv ruby shellcheck universal-ctags
+apt-get -y install adb clang clang-format cmake direnv git git-lfs jq meld nasm nodejs npm pkgconf postgresql-client python3-pip python3-venv ruby shellcheck universal-ctags
 
 # java
 apt-get -y install default-jre
@@ -32,7 +32,7 @@ apt-get -y install ctop docker.io docker-compose dosbox qemu-kvm virtualbox virt
 apt-get -y install feh fonts-font-awesome fonts-inconsolata gnome-flashback i3 i3lock-fancy lightdm lightdm-settings plymouth-theme-xubuntu-logo policykit-1-gnome rofi slick-greeter sway swayidle swaylock terminator trash-cli unifont xbacklight
 
 # multimedia
-apt-get -y install calibre gimp graphviz handbrake pandoc rawtherapee texlive-fonts-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex vlc zbar-tools
+apt-get -y install calibre gimp graphviz handbrake libaom-dev pandoc rawtherapee texlive-fonts-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex vlc zbar-tools
 
 # system
 apt-get -y install acpi apt-transport-https aptitude dos2unix fish htop iotop mc msr-tools neovim p7zip-full p7zip-rar powertop scrot snapd sshpass stow sysbench tmux tree unrar zsh

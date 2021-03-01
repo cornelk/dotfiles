@@ -10,16 +10,16 @@ alert = #bd2c40
 [bar/Bar]
 bottom = true
 wm-restack = i3
-monitor = eDP-1-1
+#monitor = eDP-1-1
 
 width = 100%
-height = 30
+height = 22
 fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0
+line-size = 2
 line-color = #f00
 
 border-size = 4
@@ -32,10 +32,10 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = DejaVu Sans Mono:size=15;0
-font-1 = unifont:fontformat=truetype:size=17:antialias=false;0
-font-2 = siji:pixelsize=17;0
-font-3 = FontAwesome:size=17;0
+font-0 = DejaVu Sans Mono:size=11;0
+font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
+font-2 = siji:pixelsize=12;0
+font-3 = FontAwesome:size=11;0
 
 modules-left = i3 xwindow
 # modules-center = mpd

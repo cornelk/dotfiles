@@ -1,7 +1,7 @@
 set $mod Mod4
 set $amod Control
 
-font pango:DejaVu Sans Mono 8
+font pango:monospace 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -173,9 +173,9 @@ assign [class="Vlc"] → 6
 
 # Automatically start applications
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id i3-msg 'workspace 1; exec google-chrome'
-#exec --no-startup-id i3-msg 'workspace 2; exec terminator; exec terminator'
+exec --no-startup-id i3-msg 'workspace 1; exec google-chrome --force-device-scale-factor=1'
+exec --no-startup-id i3-msg 'workspace 7; exec terminator; exec terminator'
 exec --no-startup-id i3-msg 'workspace 3; layout tabbed'
 exec --no-startup-id i3-msg 'workspace 4; exec keepassxc; layout tabbed'
-exec --no-startup-id i3-msg 'workspace 5; exec spotify --force-device-scale-factor=1.5'
+exec --no-startup-id i3-msg 'workspace 5; exec spotify'
 

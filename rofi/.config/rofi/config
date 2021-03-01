@@ -1,0 +1,5 @@
+rofi.theme: /usr/share/rofi/themes/fancy.rasi
+rofi.font: mono 10
+rofi.padding: 0
+rofi.dpi: 96
+
