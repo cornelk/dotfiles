@@ -35,7 +35,7 @@ apt-get -y install feh fonts-font-awesome fonts-inconsolata gnome-flashback i3 i
 apt-get -y install calibre gimp graphviz handbrake libaom-dev pandoc rawtherapee texlive-fonts-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex vlc zbar-tools
 
 # system
-apt-get -y install acpi apt-transport-https aptitude dos2unix fish htop iotop mc msr-tools neovim p7zip-full p7zip-rar powertop scrot snapd sshpass stow sysbench tmux tree unrar zsh
+apt-get -y install acpi apt-transport-https aptitude dos2unix fish htop iotop mc msr-tools neovim p7zip-full p7zip-rar powertop psmisc scrot snapd sshpass stow sysbench tmux tree unrar zsh
 
 # exfat support
 apt-get -y install exfat-fuse exfat-utils
