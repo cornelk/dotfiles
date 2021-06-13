@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Font settings
-#mkdir fonts
+#mkdir $HOME/.fonts
 #xset +fp $HOME/.fonts
 #xset fp rehash
 
@@ -17,7 +17,8 @@ xset s 3600 3600
 setxkbmap -option 'grp:win_space_toggle' -layout us,us -variant colemak,
 
 # Disable touchpad middle button
-#xinput set-button-map 12 1 0 3
+xinput set-button-map 12 1 0 3
+xinput set-button-map 13 1 1 3
 
 # Set mouse speed
 xset m 3/1 8
@@ -27,4 +28,4 @@ setxkbmap -option ctrl:nocaps
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
-bash bin/layout_ryzen.sh
+bash bin/layout.sh
