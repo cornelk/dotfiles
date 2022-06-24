@@ -1,9 +1,10 @@
 export GOPATH=~/go
 export HOSTNAME=localhost
-export PATH=/usr/sbin:$GOPATH/bin:/snap/bin:$HOME/flutter/bin:$HOME/data/apps/flutter/.pub-cache/bin:/usr/local/tinygo/bin:$HOME/.local/bin:$HOME/.nvm:$PATH
+export PATH=/usr/sbin:$GOPATH/bin:/snap/bin:$HOME/flutter/bin:$HOME/data/apps/flutter/.pub-cache/bin:/usr/local/tinygo/bin:$HOME/.local/bin:$HOME/.nvm:$HOME/Android/Sdk/tools/bin:$PATH
 export NVM_DIR=$HOME/.nvm
 
 export ZSH="$HOME/.oh-my-zsh"
+export ANDROID_HOME="$HOME/Android/Sdk"
 
 [ -f $HOME/.zshrc.private ] && source $HOME/.zshrc.private
 
@@ -88,4 +89,7 @@ autoload -U compinit; compinit
 
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
