@@ -250,7 +250,7 @@ label-muted-foreground = #666
 type = internal/battery
 battery = BAT0
 adapter = AC0
-full-at = 97
+full-at = 96
 
 label-charging = %percentage%% | %time%
 format-charging = <animation-charging> <label-charging>
