@@ -11,22 +11,23 @@ apt-get -y upgrade
 # Ubuntu 22.04+
 
 # hardware
-apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools bumblebee bumblebee-nvidia lm-sensors tlp
+#apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools bumblebee bumblebee-nvidia lm-sensors tlp
 
 # security
 apt-get -y install cryptsetup-bin keepassxc oathtool
 
 # development
-apt-get -y install adb clang clang-format cmake direnv git git-lfs jq meld nasm nodejs npm pkgconf postgresql-client python3-pip python3-venv ruby shellcheck universal-ctags
+apt-get -y install adb clang clang-format cmake direnv git git-lfs jq meld nasm nodejs npm postgresql-client python3-pip python3-venv ruby shellcheck universal-ctags zeal
 
 # java
 apt-get -y install default-jre
 
 # network
-apt-get -y install ansible autossh axel corkscrew curl fping iptraf mtr net-tools network-manager-openvpn-gnome nmap ntp openvpn syncthing traceroute ufw whois
+apt-get -y install ansible autossh axel corkscrew curl fping iptraf-ng mtr net-tools network-manager-openvpn-gnome nmap ntp openvpn syncthing traceroute ufw whois
 
 # emulation / virtualization
-apt-get -y install ctop docker.io docker-compose dosbox qemu-kvm virtualbox virtualbox-guest-additions-iso wine-development winetricks
+#apt-get -y install qemu-kvm virtualbox virtualbox-guest-additions-iso wine-development winetricks
+apt-get -y install ctop docker.io docker-compose dosbox wine-development winetricks
 
 # gui
 apt-get -y install feh fonts-font-awesome fonts-inconsolata gnome-flashback i3 i3lock-fancy lightdm lightdm-settings plymouth-theme-xubuntu-logo policykit-1-gnome polybar rofi slick-greeter sway swayidle swaylock terminator trash-cli unifont xbacklight
@@ -38,7 +39,7 @@ apt-get -y install calibre gimp graphviz handbrake libaom-dev pandoc rawtherapee
 apt-get -y install acpi apt-transport-https aptitude dos2unix fish htop iotop mc msr-tools neovim p7zip-full p7zip-rar powertop psmisc scrot snapd sshpass stow sysbench tmux tree unrar zsh
 
 # exfat support
-apt-get -y install exfat-fuse exfat-utils
+apt-get -y install exfat-fuse exfatprogs
 
 # razor device support
 apt-get -y install openrazer-meta openrazer-doc

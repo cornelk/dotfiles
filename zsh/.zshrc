@@ -6,6 +6,8 @@ export NVM_DIR=$HOME/.nvm
 export ZSH="$HOME/.oh-my-zsh"
 export ANDROID_HOME="$HOME/Android/Sdk"
 
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
 [ -f $HOME/.zshrc.private ] && source $HOME/.zshrc.private
 
 ZSH_THEME="fishy"
