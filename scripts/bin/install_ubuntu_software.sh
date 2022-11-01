@@ -11,7 +11,7 @@ apt-get -y upgrade
 # Ubuntu 22.04+
 
 # hardware
-#apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools bumblebee bumblebee-nvidia lm-sensors tlp
+apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools bumblebee bumblebee-nvidia lm-sensors tlp
 
 # security
 apt-get -y install cryptsetup-bin keepassxc oathtool
@@ -23,11 +23,11 @@ apt-get -y install adb clang clang-format cmake direnv git git-lfs jq meld nasm 
 apt-get -y install default-jre
 
 # network
-apt-get -y install ansible autossh axel corkscrew curl fping iptraf-ng mtr net-tools network-manager-openvpn-gnome nmap ntp openvpn syncthing traceroute ufw whois
+apt-get -y install ansible autossh axel corkscrew curl fping iptraf-ng mtr ncat net-tools network-manager-openvpn-gnome nmap ntp openvpn syncthing traceroute ufw whois
 
 # emulation / virtualization
 #apt-get -y install qemu-kvm virtualbox virtualbox-guest-additions-iso wine-development winetricks
-apt-get -y install ctop docker.io docker-compose dosbox wine-development winetricks
+apt-get -y install docker.io docker-compose dosbox wine-development winetricks
 
 # gui
 apt-get -y install feh fonts-font-awesome fonts-inconsolata gnome-flashback i3 i3lock-fancy lightdm lightdm-settings plymouth-theme-xubuntu-logo policykit-1-gnome polybar rofi slick-greeter sway swayidle swaylock terminator trash-cli unifont xbacklight

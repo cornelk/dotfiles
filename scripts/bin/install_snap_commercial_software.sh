@@ -7,3 +7,5 @@ fi
 
 snap install --classic datagrip
 snap install --classic goland
+snap install --classic webstorm
+
