@@ -67,7 +67,6 @@ exec --no-startup-id dex --autostart --environment i3
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-exec --no-startup-id pasystray
 
 # Notification daemon
 exec --no-startup-id dunst
@@ -82,7 +81,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 bindsym $mod+Ctrl+a exec --no-startup-id pavucontrol
 
 # Productivity tools
-exec --no-startup-id diodon
 bindsym $mod+Shift+f exec --no-startup-id thunar
 
 # Scratchpad terminal
@@ -125,7 +123,7 @@ bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+Tab exec --no-startup-id rofi -show window
+bindsym $mod+Shift+Tab exec --no-startup-id rofi -show window
 
 # change focus (vim-style: h=left, j=down, k=up, l=right)
 bindsym $mod+h focus left
@@ -239,6 +237,8 @@ assign [class="vlc"] $ws5
 
 # Workspace behavior
 workspace_auto_back_and_forth yes
+bindsym Hyper_L workspace back_and_forth
+bindsym $mod+Tab workspace back_and_forth
 
 # Move workspace to next monitor
 bindsym $mod+x move workspace to output right

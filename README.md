@@ -19,7 +19,7 @@ sudo bash scripts/bin/install_ubuntu_software.sh    # Core packages (includes fo
 sudo bash scripts/bin/install_snap_software.sh      # Snap packages
 sudo bash scripts/bin/setup_ubuntu.sh               # System configuration
 sudo bash scripts/bin/install_other_software.sh     # Additional software
-sudo bash scripts/bin/setup_zsh.sh                  # Zsh + Oh-My-Zsh setup
+bash scripts/bin/setup_zsh.sh                       # Zsh + Oh-My-Zsh setup
 ```
 
 ### Font Awesome 6 (Required for Polybar Icons)
