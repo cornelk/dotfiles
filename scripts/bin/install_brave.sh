@@ -6,11 +6,12 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 apt-get update
-apt-get -y install apt-transport-https
-curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | apt-key add -
-keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+apt-get -y install apt-transport-https curl gpg
+curl -fsSL https://brave-browser-apt-release.s3.brave.com/brave-core.asc \
+  | gpg --dearmor -o /etc/apt/keyrings/brave.gpg
 source /etc/os-release
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ $UBUNTU_CODENAME main" | tee /etc/apt/sources.list.d/brave-browser-release-${UBUNTU_CODENAME}.list
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/brave.gpg] https://brave-browser-apt-release.s3.brave.com/ $UBUNTU_CODENAME main" \
+  > /etc/apt/sources.list.d/brave.list
 apt-get update
 apt-get -y install brave-browser
 

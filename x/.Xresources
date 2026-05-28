@@ -7,13 +7,16 @@
 ! config can be added there or also here below.
 ! For comments use "!"
 
-Xft.dpi: 128
+Xft.dpi: 144
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
+
+Xcursor.size: 24
+Xcursor.theme: default
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme

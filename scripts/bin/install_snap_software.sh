@@ -30,5 +30,4 @@ snap install --classic terraform
 #snap install vidcutter
 # send files from one computer to another
 #snap install wormhole
-snap install yt-dlp
 

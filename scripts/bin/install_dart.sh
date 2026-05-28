@@ -6,10 +6,11 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 apt-get update
-apt-get -y install apt-transport-https
-curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list
-
+apt-get -y install apt-transport-https curl gpg
+curl -fsSL https://dl-ssl.google.com/linux/linux_signing_key.pub \
+  | gpg --dearmor -o /etc/apt/keyrings/dart.gpg
+echo "deb [signed-by=/etc/apt/keyrings/dart.gpg] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main" \
+  > /etc/apt/sources.list.d/dart_stable.list
 apt-get update
 apt-get -y install dart
 

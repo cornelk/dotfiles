@@ -6,4 +6,4 @@ if ! command -v stow > /dev/null 2>&1; then
 fi
 
 # install all dirs and ignore .git
-find . -mindepth 1 -maxdepth 1 -not -name ".*" -type d -printf "%P\n" | xargs stow
+find . -mindepth 1 -maxdepth 1 -not -name ".*" -type d -printf "%P\n" | xargs stow -t ~
