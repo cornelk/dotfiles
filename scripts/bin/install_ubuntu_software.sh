@@ -30,7 +30,7 @@ apt-get -y install ansible autossh axel corkscrew curl fping iptraf-ng mtr ncat 
 apt-get -y install docker-compose-v2 docker.io dosbox wine winetricks
 
 # gui
-apt-get -y install feh fonts-font-awesome fonts-inconsolata gnome-flashback i3 i3lock-fancy lightdm lightdm-settings plymouth-theme-xubuntu-logo policykit-1-gnome polybar rofi slick-greeter sway swayidle swaylock terminator trash-cli unifont xbacklight xinput
+apt-get -y install brightnessctl dex feh fonts-font-awesome fonts-inconsolata gnome-flashback grim i3 i3lock-fancy kanshi lightdm lightdm-settings mako-notifier plymouth-theme-xubuntu-logo policykit-1-gnome polybar rofi slick-greeter slurp sway swaybg swayidle swaylock terminator trash-cli unifont waybar wdisplays wl-clipboard wofi xbacklight xdg-desktop-portal-wlr xinput
 
 # multimedia
 apt-get -y install calibre gimp graphviz handbrake libaom-dev pandoc rawtherapee texlive-fonts-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex vlc zbar-tools

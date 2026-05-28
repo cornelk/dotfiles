@@ -1,0 +1,27 @@
+window {
+  background-color: #282828;
+  color: #ebdbb2;
+  font-family: "DejaVu Sans Mono";
+  font-size: 14px;
+}
+
+#input {
+  margin: 8px;
+  padding: 8px;
+  border: 2px solid #458588;
+  background-color: #1d2021;
+  color: #ebdbb2;
+}
+
+#inner-box {
+  margin: 0 8px 8px 8px;
+}
+
+#entry {
+  padding: 7px;
+}
+
+#entry:selected {
+  background-color: #458588;
+  color: #ebdbb2;
+}

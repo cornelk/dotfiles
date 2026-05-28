@@ -33,6 +33,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Keep the fishy prompt shape, but use blue tones for user/path.
+PROMPT='%{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m %{$fg_bold[blue]%}$(_fishy_collapsed_wd)%{$reset_color%}%(!.#.>) '
+
 eval "$(direnv hook zsh)"
 
 # User configuration

@@ -37,6 +37,9 @@ render_workspaces() {
 
 render_workspaces
 
-i3-msg -t subscribe '["workspace", "mode"]' | while read -r _; do
+coproc I3_EVENTS { i3-msg -t subscribe '["workspace", "mode"]'; }
+trap 'kill "$I3_EVENTS_PID" 2>/dev/null' EXIT INT TERM
+
+while read -r _ <&"${I3_EVENTS[0]}"; do
     render_workspaces
 done

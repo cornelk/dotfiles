@@ -23,8 +23,10 @@ gsettings set org.gnome.desktop.a11y.keyboard stickykeys-enable false
 # fix nano ledger s support
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | bash
 
-# usermod -G netdev -a user
-# usermod -G kvm -a user
-# usermod -G docker -a user
-# usermod -G input -a user
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+if [[ -n "${SUDO_USER:-}" && "$SUDO_USER" != "root" ]]; then
+    "$script_dir/setup_user_groups.sh" "$SUDO_USER"
+else
+    echo "warning: no sudo user detected; run setup_user_groups.sh with your username"
+fi

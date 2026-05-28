@@ -22,6 +22,16 @@ sudo bash scripts/bin/install_other_software.sh     # Additional software
 bash scripts/bin/setup_zsh.sh                       # Zsh + Oh-My-Zsh setup
 ```
 
+### Sway
+
+Install the Wayland desktop packages and stow the Sway-specific dotfiles:
+
+```bash
+bash scripts/bin/setup_sway.sh
+```
+
+Then log out and choose the `Sway` session in the display manager.
+
 ### Font Awesome 6 (Required for Polybar Icons)
 
 Ubuntu's `fonts-font-awesome` package is outdated. Install Font Awesome 6 in your home directory:

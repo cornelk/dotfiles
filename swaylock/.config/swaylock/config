@@ -1,0 +1,16 @@
+color=1d2021
+inside-color=282828
+ring-color=458588
+key-hl-color=98971a
+bs-hl-color=cc241d
+line-color=282828
+separator-color=282828
+inside-ver-color=282828
+ring-ver-color=d79921
+inside-wrong-color=282828
+ring-wrong-color=cc241d
+text-color=ebdbb2
+text-ver-color=ebdbb2
+text-wrong-color=ebdbb2
+indicator-radius=90
+indicator-thickness=8

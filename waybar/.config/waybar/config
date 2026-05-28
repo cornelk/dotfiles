@@ -1,0 +1,75 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 28,
+  "spacing": 8,
+  "modules-left": ["sway/workspaces", "sway/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["memory", "cpu", "temperature", "network", "pulseaudio", "sway/language", "tray"],
+  "sway/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": ""
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": []
+    }
+  },
+  "sway/window": {
+    "max-length": 70
+  },
+  "clock": {
+    "format": "{:%Y-%m-%d %H:%M}",
+    "tooltip-format": "{:%A, %B %d, %Y}"
+  },
+  "memory": {
+    "interval": 3,
+    "format": "MEM {percentage}%"
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "CPU {usage}%"
+  },
+  "temperature": {
+    "interval": 3,
+    "critical-threshold": 85,
+    "format": "TEMP {temperatureC}C"
+  },
+  "network": {
+    "interval": 3,
+    "format-wifi": "{essid} {signalStrength}%",
+    "format-ethernet": "{bandwidthUpBits}",
+    "format-disconnected": ""
+  },
+  "pulseaudio": {
+    "format": "VOL {volume}%",
+    "format-muted": "MUTED"
+  },
+  "sway/language": {
+    "format": "KB {short} {variant}",
+    "tooltip-format": "{long}"
+  },
+  "tray": {
+    "spacing": 8
+  }
+}
