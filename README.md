@@ -10,6 +10,8 @@ cd dotfiles
 bash install.sh
 ```
 
+This stows all top-level config directories, including `tmux`, so `~/.tmux.conf` is linked automatically.
+
 ## System Installation
 
 Run these scripts in order:

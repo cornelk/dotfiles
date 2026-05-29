@@ -59,7 +59,6 @@ exec_always sh -c '"$HOME/.config/sway/focus-last-window.sh" --daemon'
 
 exec swayidle -w \
     timeout 600 'swaylock -f' \
-    timeout 900 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
     before-sleep 'swaylock -f'
 
 for_window [app_id="scratch"] move scratchpad

@@ -2,10 +2,10 @@
   "layer": "top",
   "position": "bottom",
   "height": 28,
-  "spacing": 8,
+  "spacing": 0,
   "modules-left": ["sway/workspaces", "sway/window"],
   "modules-center": ["clock"],
-  "modules-right": ["memory", "cpu", "temperature", "network", "pulseaudio", "sway/language", "tray"],
+  "modules-right": ["memory", "cpu", "temperature", "network", "pulseaudio", "battery", "sway/language", "tray"],
   "sway/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,
@@ -64,6 +64,19 @@
   "pulseaudio": {
     "format": "VOL {volume}%",
     "format-muted": "MUTED"
+  },
+  "battery": {
+    "bat": "BAT0",
+    "adapter": "AC",
+    "interval": 10,
+    "states": {
+      "warning": 40,
+      "critical": 20
+    },
+    "format": "BAT {capacity}%",
+    "format-charging": "CHR {capacity}%",
+    "format-plugged": "AC {capacity}%",
+    "format-full": "FULL {capacity}%"
   },
   "sway/language": {
     "format": "KB {short} {variant}",

@@ -2,7 +2,7 @@
   border: none;
   border-radius: 0;
   font-family: "DejaVu Sans Mono", "Font Awesome 6 Free";
-  font-size: 12pt;
+  font-size: 13pt;
   min-height: 0;
 }
 
@@ -39,9 +39,18 @@ window#waybar {
 #temperature,
 #network,
 #pulseaudio,
+#battery,
 #language,
 #tray {
   padding: 0 8px;
+}
+
+#battery.warning {
+  color: #d79921;
+}
+
+#battery.critical {
+  color: #cc241d;
 }
 
 #temperature.critical {
@@ -53,6 +62,9 @@ window#waybar {
 #temperature,
 #network,
 #pulseaudio,
+#battery,
 #language {
   border-right: 1px solid #665c54;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }

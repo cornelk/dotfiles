@@ -33,7 +33,7 @@ apt-get -y install docker-compose-v2 docker.io dosbox wine winetricks
 apt-get -y install brightnessctl dex feh fonts-font-awesome fonts-inconsolata gnome-flashback grim i3 i3lock-fancy kanshi lightdm lightdm-settings mako-notifier plymouth-theme-xubuntu-logo policykit-1-gnome polybar rofi slick-greeter slurp sway swaybg swayidle swaylock terminator trash-cli unifont waybar wdisplays wl-clipboard wofi xbacklight xdg-desktop-portal-wlr xinput
 
 # multimedia
-apt-get -y install calibre gimp graphviz handbrake libaom-dev pandoc rawtherapee texlive-fonts-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex vlc zbar-tools
+apt-get -y install calibre gimp graphviz handbrake libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libaom-dev pandoc rawtherapee texlive-fonts-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex vlc zbar-tools
 
 # system
 apt-get -y install 7zip 7zip-rar acpi apt-transport-https aptitude dos2unix fish htop iotop mc msr-tools neovim powertop psmisc scrot snapd sshpass stow sysbench tmux tree unrar zsh
