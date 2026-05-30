@@ -17,7 +17,7 @@ apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools lm-senso
 apt-get -y install cryptsetup-bin keepassxc oathtool
 
 # development
-apt-get -y install adb clang clang-format cmake direnv git git-lfs jq meld nasm nodejs npm postgresql-client python3-pip python3-venv ruby shellcheck universal-ctags zeal
+apt-get -y install adb clang clang-format clang-tidy cmake direnv git git-lfs jq meld nasm nodejs npm postgresql-client python3-pip python3-venv ruby shellcheck universal-ctags zeal
 
 # java
 apt-get -y install default-jre

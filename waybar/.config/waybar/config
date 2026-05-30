@@ -5,7 +5,7 @@
   "spacing": 0,
   "modules-left": ["sway/workspaces", "sway/window"],
   "modules-center": ["clock"],
-  "modules-right": ["memory", "cpu", "temperature", "network", "pulseaudio", "battery", "sway/language", "tray"],
+  "modules-right": ["memory", "cpu", "temperature", "network", "pulseaudio", "battery", "sway/language"],
   "sway/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,
@@ -81,8 +81,5 @@
   "sway/language": {
     "format": "KB {short} {variant}",
     "tooltip-format": "{long}"
-  },
-  "tray": {
-    "spacing": 8
   }
 }

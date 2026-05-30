@@ -54,8 +54,8 @@ exec dex --autostart --environment sway
 exec mako
 exec nm-applet --indicator
 exec blueman-applet
-exec_always sh -c 'pkill -x waybar; waybar'
-exec_always sh -c '"$HOME/.config/sway/focus-last-window.sh" --daemon'
+exec_always --no-startup-id "$HOME/.config/waybar/launch.sh"
+exec_always --no-startup-id "$HOME/.config/sway/focus-last-window.sh" --daemon
 
 exec swayidle -w \
     timeout 600 'swaylock -f' \
@@ -76,7 +76,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit Sway?' -b 'Yes, exit' 'swaymsg exit'
 
-bindcode 66 exec "$HOME/.config/sway/focus-last-window.sh" --toggle
+bindcode --release 66 exec "$HOME/.config/sway/focus-last-window.sh" --toggle
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
