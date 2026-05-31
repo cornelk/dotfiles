@@ -4,12 +4,6 @@ set -euo pipefail
 
 state_dir="${XDG_RUNTIME_DIR:-/tmp}/sway-focus-history"
 state_file="$state_dir/last-windows"
-state_log="$state_dir/last-windows.log"
-
-log_event() {
-    mkdir -p "$state_dir"
-    printf '[%s] %s\n' "$(date +'%Y-%m-%d %H:%M:%S')" "$*" >> "$state_log"
-}
 
 focused_window_info() {
     swaymsg -t get_tree | jq -r '.. | objects | select((.type == "con" or .type == "floating_con") and .focused? == true) | "\(.id)|\(.app_id // .window_properties.class // "" )"' | head -n 1
@@ -58,7 +52,6 @@ record_focus() {
 
 daemon() {
     mkdir -p "$state_dir"
-    log_event "daemon start"
     exec 9>"$state_dir/daemon.lock"
     flock -n 9 || exit 0
 
@@ -85,30 +78,25 @@ toggle() {
     local target_id=""
     local -a history=()
 
-    log_event "toggle request"
-
-    [[ -f "$state_file" ]] || { log_event "toggle no state file"; exit 0; }
+    [[ -f "$state_file" ]] || exit 0
     mapfile -t history < "$state_file"
-    if [[ "${#history[@]}" -lt 2 ]]; then
-        log_event "toggle history too short (${#history[@]})"
-        exit 0
-    fi
+    [[ "${#history[@]}" -ge 2 ]] || exit 0
 
     current_info="$(focused_window_info)"
     current_id="${current_info%%|*}"
     current_app="${current_info#*|}"
 
     IFS='|' read -r target_app target_id <<< "${history[1]:-}"
-    [[ -n "$target_app" && -n "$target_id" ]] || { log_event "toggle invalid target ${history[1]:-}"; exit 0; }
+    [[ -n "$target_app" && -n "$target_id" ]] || exit 0
 
-    [[ "$target_id" != "$current_id" ]] || { log_event "toggle target is current ($target_id)"; exit 0; }
+    [[ "$target_id" != "$current_id" ]] || exit 0
 
     if ! container_exists "$target_id"; then
         target_id="$(swaymsg -t get_tree | jq -r --arg app "$target_app" '.. | objects | select((.type == "con" or .type == "floating_con") and ((.app_id? == $app) or (.window_properties.class? == $app))) | .id' | head -n 1)"
-        [[ -n "$target_id" ]] || { log_event "toggle fallback by app not found: $target_app"; exit 0; }
+        [[ -n "$target_id" ]] || exit 0
     fi
 
-    container_exists "$target_id" || { log_event "toggle container missing: $target_id"; exit 0; }
+    container_exists "$target_id" || exit 0
 
     if swaymsg "[con_id=$target_id]" focus >/dev/null; then
         {
@@ -116,9 +104,6 @@ toggle() {
             printf '%s|%s\n' "$current_app" "$current_id"
         } > "$state_file.tmp"
         mv "$state_file.tmp" "$state_file"
-        log_event "toggle success target=$target_app|$target_id from=$current_app|$current_id"
-    else
-        log_event "toggle focus command failed target=$target_id"
     fi
 }
 

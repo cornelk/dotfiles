@@ -51,15 +51,13 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 exec_always systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
 exec dex --autostart --environment sway
+exec --no-startup-id "$HOME/.config/sway/disable-screen-lock.sh"
+exec_always --no-startup-id swaymsg "output * dpms on"
 exec mako
 exec nm-applet --indicator
 exec blueman-applet
 exec_always --no-startup-id "$HOME/.config/waybar/launch.sh"
 exec_always --no-startup-id "$HOME/.config/sway/focus-last-window.sh" --daemon
-
-exec swayidle -w \
-    timeout 600 'swaylock -f' \
-    before-sleep 'swaylock -f'
 
 for_window [app_id="scratch"] move scratchpad
 exec $term --class scratch
@@ -76,7 +74,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit Sway?' -b 'Yes, exit' 'swaymsg exit'
 
-bindcode --release 66 exec "$HOME/.config/sway/focus-last-window.sh" --toggle
+bindcode --release 66 workspace back_and_forth
+bindcode --release Mod1+66 exec --no-startup-id "$HOME/.config/sway/focus-last-window.sh" --toggle
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down

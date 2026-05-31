@@ -11,9 +11,8 @@ export GDK_DPI_SCALE=0.75
 xset s off
 xset -dpms
 xset s noblank
-
-# Turn off screen after 60m
-xset s 3600 3600
+xset s 0 0
+xset dpms 0 0 0
 
 # Set keyboard layout
 setxkbmap -option 'grp:win_space_toggle' -layout us,us -variant colemak,
