@@ -17,7 +17,7 @@ This stows all top-level config directories, including `tmux`, so `~/.tmux.conf`
 Run these scripts in order:
 
 ```bash
-sudo bash scripts/bin/install_ubuntu_software.sh    # Core packages (includes fonts-font-awesome, xinput)
+sudo bash scripts/bin/install_ubuntu_software.sh    # Core packages (includes gh, fonts-font-awesome, xinput, docker-buildx)
 sudo bash scripts/bin/install_snap_software.sh      # Snap packages
 sudo bash scripts/bin/setup_ubuntu.sh               # System configuration
 sudo bash scripts/bin/install_other_software.sh     # Additional software

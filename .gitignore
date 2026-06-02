@@ -1,2 +1,4 @@
 .idea
 /scripts/bin/layout.sh
+/scripts/bin/*
+!/scripts/bin/*.sh

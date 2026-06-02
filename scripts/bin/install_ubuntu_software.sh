@@ -17,7 +17,7 @@ apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools lm-senso
 apt-get -y install cryptsetup-bin keepassxc oathtool
 
 # development
-apt-get -y install adb clang clang-format clang-tidy cmake direnv git git-lfs jq meld nasm nodejs npm postgresql-client python3-pip python3-venv ruby shellcheck universal-ctags zeal
+apt-get -y install adb clang clang-format clang-tidy cmake direnv gh git git-lfs jq meld nasm nodejs npm postgresql-client python3-pip python3-venv ruby shellcheck universal-ctags zeal
 
 # java
 apt-get -y install default-jre
@@ -27,7 +27,7 @@ apt-get -y install ansible autossh axel corkscrew curl fping iptraf-ng mtr ncat 
 
 # emulation / virtualization
 #apt-get -y install qemu-kvm virtualbox virtualbox-guest-additions-iso wine winetricks
-apt-get -y install docker-compose-v2 docker.io dosbox wine winetricks
+apt-get -y install docker-buildx docker-compose-v2 docker.io dosbox wine winetricks
 
 # gui
 apt-get -y install brightnessctl dex feh fonts-font-awesome fonts-inconsolata gnome-flashback grim i3 i3lock-fancy kanshi lightdm lightdm-settings mako-notifier plymouth-theme-xubuntu-logo policykit-1-gnome polybar rofi slick-greeter slurp sway swaybg swayidle swaylock terminator trash-cli unifont waybar wdisplays wl-clipboard wofi xbacklight xdg-desktop-portal-wlr xinput

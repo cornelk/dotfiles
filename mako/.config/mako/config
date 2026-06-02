@@ -7,3 +7,7 @@ border-radius=0
 padding=8
 default-timeout=6000
 max-visible=5
+
+[app-name=kitty]
+invisible=1
+history=0

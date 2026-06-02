@@ -47,8 +47,7 @@ input type:touchpad {
     middle_emulation disabled
 }
 
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec_always systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec_always --no-startup-id "$HOME/.config/sway/start-session-services.sh"
 
 exec dex --autostart --environment sway
 exec --no-startup-id "$HOME/.config/sway/disable-screen-lock.sh"
