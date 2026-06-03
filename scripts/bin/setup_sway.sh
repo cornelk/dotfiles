@@ -27,6 +27,7 @@ packages=(
     thunar
     waybar
     wdisplays
+    xclip
     wl-clipboard
     wofi
     xdg-desktop-portal-wlr

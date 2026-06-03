@@ -107,9 +107,12 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
-bindsym Print exec grim "$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)"
-bindsym $mod+Print exec grim -g "$(slurp)" "$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)"
-bindsym $mod+Shift+Print exec grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.focused? == true) | .rect | \"\(.x),\(.y) \(.width)x\(.height)\"')" "$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)"
+bindsym Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots" && file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)" && grim "$file"'
+bindsym $mod+Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots" && file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)" && grim -g "$(slurp)" "$file"'
+bindsym $mod+Shift+Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots" && file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)" && grim -g "$(swaymsg -t get_tree | jq -r '"'"'.. | select(.focused? == true) | .rect | "\(.x),\(.y) \(.width)x\(.height)"'"'"')" "$file"'
+bindsym F12 exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots" && file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)" && grim "$file"'
+bindsym Shift+F12 exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots" && file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)" && grim -g "$(slurp)" "$file"'
+bindsym Ctrl+F12 exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots" && file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)" && grim -g "$(swaymsg -t get_tree | jq -r '"'"'.. | select(.focused? == true) | .rect | "\(.x),\(.y) \(.width)x\(.height)"'"'"')" "$file"'
 
 bindsym $mod+Shift+x exec swaylock -f
 
