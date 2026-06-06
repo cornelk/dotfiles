@@ -59,6 +59,7 @@ eval "$(direnv hook zsh)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias bunx='bun x'
 
 # History settings
 HISTSIZE=100000
