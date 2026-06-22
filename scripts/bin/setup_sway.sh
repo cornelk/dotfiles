@@ -19,6 +19,7 @@ packages=(
     network-manager-gnome
     pavucontrol
     policykit-1-gnome
+    system-config-printer
     slurp
     sway
     swaybg

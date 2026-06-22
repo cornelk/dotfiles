@@ -186,6 +186,7 @@ bindsym $mod+Shift+Print exec --no-startup-id scrot -u '%Y-%m-%d_%H-%M-%S_screen
 
 # Screen locking
 bindsym $mod+Shift+x exec --no-startup-id i3lock -c 000000
+bindsym Ctrl+$mod+l exec --no-startup-id i3lock -c 000000
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.

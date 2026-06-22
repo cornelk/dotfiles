@@ -115,6 +115,7 @@ bindsym Shift+F12 exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots" && file="$HO
 bindsym Ctrl+F12 exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots" && file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S_screenshot.png)" && grim -g "$(swaymsg -t get_tree | jq -r '"'"'.. | select(.focused? == true) | .rect | "\(.x),\(.y) \(.width)x\(.height)"'"'"')" "$file"'
 
 bindsym $mod+Shift+x exec swaylock -f
+bindsym $mod+Ctrl+l exec swaylock -f
 
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
