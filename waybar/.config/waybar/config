@@ -56,10 +56,11 @@
     "format": "TEMP {temperatureC}C"
   },
   "network": {
+    "interface": "wlp194s0",
     "interval": 3,
-    "format-wifi": "{essid} {signalStrength}%",
-    "format-ethernet": "{bandwidthUpBits}",
-    "format-disconnected": ""
+    "format-wifi": "WiFi {essid} {signalStrength}%",
+    "format-ethernet": "ETH {ipaddr}/{cidr}",
+    "format-disconnected": "WiFi disconnected"
   },
   "pulseaudio": {
     "format": "VOL {volume}%",

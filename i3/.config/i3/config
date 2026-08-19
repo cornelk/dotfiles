@@ -68,8 +68,7 @@ exec --no-startup-id dex --autostart --environment i3
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Notification daemon
-exec --no-startup-id dunst
+# Desktop notification popups are intentionally disabled.
 
 # Compositor
 exec_always --no-startup-id picom -b

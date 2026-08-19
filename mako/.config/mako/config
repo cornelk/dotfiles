@@ -5,9 +5,18 @@ border-color=#458588
 border-size=2
 border-radius=0
 padding=8
-default-timeout=6000
+default-timeout=5000
+history=0
+max-history=0
 max-visible=5
 
-[app-name=kitty]
+# Keep the notification service available for applications, but never render
+# popup banners. Separate urgency criteria cover every notification.
+[urgency=low]
 invisible=1
-history=0
+
+[urgency=normal]
+invisible=1
+
+[urgency=critical]
+invisible=1
