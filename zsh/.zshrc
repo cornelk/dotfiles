@@ -60,6 +60,7 @@ eval "$(direnv hook zsh)"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bunx='bun x'
+alias gchanged='git --no-pager diff --name-only HEAD'
 
 # History settings
 HISTSIZE=100000
