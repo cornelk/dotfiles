@@ -118,8 +118,8 @@ bindsym $mod+Shift+x exec swaylock -f
 bindsym $mod+Ctrl+l exec swaylock -f
 
 set $backlight amdgpu_bl1
-bindsym XF86MonBrightnessUp exec brightnessctl -d $backlight set +10%
-bindsym XF86MonBrightnessDown exec brightnessctl -d $backlight set 10%-
+bindsym XF86MonBrightnessUp exec brightnessctl -d $backlight set +20%
+bindsym XF86MonBrightnessDown exec brightnessctl -d $backlight set 20%-
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle

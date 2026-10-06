@@ -41,6 +41,7 @@ window#waybar {
 #pulseaudio,
 #battery,
 #language,
+#custom-claude,
 #custom-codex,
 #tray {
   padding: 0 8px;
@@ -58,28 +59,13 @@ window#waybar {
   color: #cc241d;
 }
 
-#custom-codex.ok {
-  color: #b8bb26;
-}
-
-#custom-codex.warning {
-  color: #d79921;
-}
-
-#custom-codex.critical {
-  color: #cc241d;
-}
-
-#custom-codex.error {
-  color: #928374;
-}
-
 #memory,
 #cpu,
 #temperature,
 #network,
 #pulseaudio,
 #battery,
+#custom-claude,
 #custom-codex,
 #language {
   border-right: 1px solid #665c54;

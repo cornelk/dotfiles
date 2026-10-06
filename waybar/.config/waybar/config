@@ -4,7 +4,7 @@
   "height": 28,
   "spacing": 0,
   "modules-left": ["sway/workspaces", "sway/window"],
-  "modules-right": ["custom/codex", "memory", "cpu", "temperature", "network", "pulseaudio", "battery", "sway/language", "clock"],
+  "modules-right": ["custom/claude", "custom/codex", "memory", "cpu", "temperature", "network", "pulseaudio", "battery", "sway/language", "clock"],
   "sway/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,
@@ -89,5 +89,12 @@
     "interval": 300,
     "tooltip": true,
     "on-click": "$HOME/bin/codex_usage.sh --toggle"
+  },
+  "custom/claude": {
+    "exec": "$HOME/bin/claude_usage.sh",
+    "return-type": "json",
+    "interval": 300,
+    "tooltip": true,
+    "on-click": "$HOME/bin/claude_usage.sh --toggle"
   }
 }

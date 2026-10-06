@@ -93,8 +93,8 @@ reset_at = window.get("reset_at")
 if reset_at:
     reset = datetime.fromtimestamp(reset_at)
     time_left = max(reset - datetime.now(), timedelta(0))
-    reset_short = f"resets {reset:%a %d %b %H:%M}"
-    reset_line = f"Resets {reset:%a %d %b %H:%M} (in {time_left.days}d {time_left.seconds // 3600}h)"
+    reset_short = f"resets {reset:%Y-%m-%d %H:%M}"
+    reset_line = f"Resets {reset:%Y-%m-%d %H:%M} (in {time_left.days}d {time_left.seconds // 3600}h)"
 else:
     reset_short = "reset unknown"
     reset_line = "Reset time unknown"
