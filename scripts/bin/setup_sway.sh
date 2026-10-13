@@ -10,8 +10,10 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 repo_dir="$(cd "$script_dir/../.." && pwd)"
 
 packages=(
+    blueman
     brightnessctl
     dex
+    foot
     grim
     kanshi
     kitty
@@ -45,6 +47,21 @@ mkdir -p "$HOME/Pictures/Screenshots"
 
 cd "$repo_dir"
 stow -t "$HOME" sway waybar wofi mako swaylock environment kitty
+
+# Plain `sway` refuses to start on the proprietary NVIDIA driver, so register a
+# session that uses the sway-session launcher (--unsupported-gpu, NVIDIA env,
+# persistent log in ~/.local/state/sway/session.log).
+if [[ -d /proc/driver/nvidia ]]; then
+    sudo tee /usr/share/wayland-sessions/sway-nvidia.desktop >/dev/null <<EOF
+[Desktop Entry]
+Name=Sway (NVIDIA)
+Comment=Sway with --unsupported-gpu for the proprietary NVIDIA driver
+Exec=$HOME/.local/bin/sway-session
+Type=Application
+DesktopNames=sway
+EOF
+    echo "Installed the 'Sway (NVIDIA)' session."
+fi
 
 systemctl --user daemon-reload || true
 systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP || true
