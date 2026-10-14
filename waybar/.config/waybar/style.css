@@ -41,6 +41,7 @@ window#waybar {
 #pulseaudio,
 #battery,
 #language,
+#custom-commandcode,
 #custom-claude,
 #custom-codex,
 #tray {
@@ -65,6 +66,7 @@ window#waybar {
 #network,
 #pulseaudio,
 #battery,
+#custom-commandcode,
 #custom-claude,
 #custom-codex,
 #language {
