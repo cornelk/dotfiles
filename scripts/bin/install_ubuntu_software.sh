@@ -14,10 +14,10 @@ apt-get -y upgrade
 apt-get -y install alsa-tools alsa-tools-gui arandr blueman bluez-tools lm-sensors tlp
 
 # security
-apt-get -y install cryptsetup-bin keepassxc oathtool
+apt-get -y install apparmor-profiles apparmor-utils cryptsetup-bin keepassxc oathtool
 
 # development
-apt-get -y install adb clang clang-format clang-tidy cmake direnv gh git git-lfs jq meld nasm nodejs npm postgresql-client python3-pip python3-venv ruby shellcheck universal-ctags zeal
+apt-get -y install adb clang clang-format clang-tidy cmake direnv dotnet-sdk-10.0 gh git git-lfs jq meld nasm nodejs npm postgresql-client python3-pip python3-venv ripgrep ruby shellcheck universal-ctags xvfb zeal
 
 # java
 apt-get -y install default-jre
@@ -30,7 +30,7 @@ apt-get -y install ansible autossh axel corkscrew curl fping iptraf-ng mtr ncat 
 apt-get -y install docker-buildx docker-compose-v2 docker.io dosbox wine winetricks
 
 # gui
-apt-get -y install brightnessctl dex feh fonts-font-awesome fonts-inconsolata gnome-flashback grim i3 i3lock-fancy kanshi lightdm lightdm-settings mako-notifier plymouth-theme-xubuntu-logo policykit-1-gnome polybar rofi slick-greeter slurp sway swaybg swayidle swaylock terminator trash-cli unifont waybar wdisplays xclip wl-clipboard wofi xbacklight xdg-desktop-portal-wlr xinput
+apt-get -y install autorandr brightnessctl clipit dex feh fonts-font-awesome fonts-inconsolata gnome-flashback grim i3 i3lock-fancy kanshi lightdm lightdm-settings mako-notifier pasystray picom plymouth-theme-xubuntu-logo policykit-1-gnome polybar rofi slick-greeter slurp sway swaybg swayidle swaylock terminator trash-cli unifont waybar wdisplays xclip wl-clipboard wofi xbacklight xdg-desktop-portal-wlr xinput
 
 # multimedia
 apt-get -y install calibre gimp graphviz handbrake libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libaom-dev pandoc rawtherapee texlive-fonts-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex tesseract-ocr vlc zbar-tools

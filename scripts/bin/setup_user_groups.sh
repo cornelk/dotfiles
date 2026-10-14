@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-readonly DEFAULT_GROUPS=(netdev kvm docker input)
+readonly DEFAULT_GROUPS=(netdev kvm docker input video render)
 
 usage() {
     echo "usage: sudo $0 [username]"

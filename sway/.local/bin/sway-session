@@ -1,0 +1,19 @@
+#!/bin/sh
+# Launcher for the "Sway (NVIDIA)" lightdm session.
+# Logs to a persistent file because ~/.xsession-errors is overwritten on every login.
+LOG="$HOME/.local/state/sway/session.log"
+mkdir -p "$(dirname "$LOG")"
+[ -f "$LOG" ] && mv -f "$LOG" "$LOG.prev"
+
+export XDG_SESSION_TYPE=wayland
+export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_DESKTOP=sway
+export WLR_NO_HARDWARE_CURSORS=1
+
+{
+    echo "=== $(date -Is) starting sway ==="
+    env | grep -E '^(XDG_|WLR_|DISPLAY|WAYLAND|DBUS)' | sort
+    echo "=== sway output ==="
+} >"$LOG" 2>&1
+
+exec sway --unsupported-gpu -d "$@" >>"$LOG" 2>&1
