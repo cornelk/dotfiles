@@ -2,3 +2,4 @@
 /scripts/bin/layout.sh
 /scripts/bin/*
 !/scripts/bin/*.sh
+/waybar/.config/pulse/

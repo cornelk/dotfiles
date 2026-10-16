@@ -51,16 +51,22 @@ stow -t "$HOME" sway waybar wofi mako swaylock environment kitty
 # Plain `sway` refuses to start on the proprietary NVIDIA driver, so register a
 # session that uses the sway-session launcher (--unsupported-gpu, NVIDIA env,
 # persistent log in ~/.local/state/sway/session.log).
+# This repository does not contain the launcher. Skip the session if it is missing.
+sway_session_launcher="$HOME/.local/bin/sway-session"
 if [[ -d /proc/driver/nvidia ]]; then
-    sudo tee /usr/share/wayland-sessions/sway-nvidia.desktop >/dev/null <<EOF
+    if [[ -x "$sway_session_launcher" ]]; then
+        sudo tee /usr/share/wayland-sessions/sway-nvidia.desktop >/dev/null <<EOF
 [Desktop Entry]
 Name=Sway (NVIDIA)
 Comment=Sway with --unsupported-gpu for the proprietary NVIDIA driver
-Exec=$HOME/.local/bin/sway-session
+Exec=$sway_session_launcher
 Type=Application
 DesktopNames=sway
 EOF
-    echo "Installed the 'Sway (NVIDIA)' session."
+        echo "Installed the 'Sway (NVIDIA)' session."
+    else
+        echo "warning: $sway_session_launcher is missing, skipped the 'Sway (NVIDIA)' session." >&2
+    fi
 fi
 
 systemctl --user daemon-reload || true
