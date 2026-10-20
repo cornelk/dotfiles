@@ -19,6 +19,11 @@ apt-get -y install apparmor-profiles apparmor-utils cryptsetup-bin keepassxc oat
 # development
 apt-get -y install adb clang clang-format clang-tidy cmake direnv dotnet-sdk-10.0 gh git git-lfs jq meld nasm nodejs npm postgresql-client python3-pip python3-venv ripgrep ruby shellcheck universal-ctags xvfb zeal
 
+# browser test dependencies for the Playwright WebKit browser (Ubuntu 24.04 package names).
+# xvfb is in the development line. Keep this line apart: a package that does not exist on
+# another release would stop the whole apt-get command.
+apt-get -y install fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-wqy-zenhei libavif16 libevent-2.1-7t64 libgav1-2 libhidapi-hidraw0 libmanette-0.2-0 xfonts-cyrillic xfonts-scalable xserver-common xserver-xorg-legacy
+
 # java
 apt-get -y install default-jre
 
