@@ -42,7 +42,7 @@ window#waybar {
 #battery,
 #language,
 #custom-commandcode,
-#custom-claude,
+/* #custom-claude, */
 #custom-codex,
 #tray {
   padding: 0 8px;
@@ -67,7 +67,7 @@ window#waybar {
 #pulseaudio,
 #battery,
 #custom-commandcode,
-#custom-claude,
+/* #custom-claude, */
 #custom-codex,
 #language {
   border-right: 1px solid #665c54;
